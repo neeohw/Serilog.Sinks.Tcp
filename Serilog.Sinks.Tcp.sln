@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sinks.Tcp", "Serilog.Sinks.Tcp\Serilog.Sinks.Tcp.csproj", "{51A0CBEF-30DD-459C-847D-79D220A6D1A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sinks.Tcp.Connector", "Serilog.Sinks.Tcp.Connector\Serilog.Sinks.Tcp.Connector.csproj", "{A61958AC-FA6F-483B-AB19-E8EFAE1E2998}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51A0CBEF-30DD-459C-847D-79D220A6D1A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A0CBEF-30DD-459C-847D-79D220A6D1A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A0CBEF-30DD-459C-847D-79D220A6D1A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A0CBEF-30DD-459C-847D-79D220A6D1A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A61958AC-FA6F-483B-AB19-E8EFAE1E2998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A61958AC-FA6F-483B-AB19-E8EFAE1E2998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A61958AC-FA6F-483B-AB19-E8EFAE1E2998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A61958AC-FA6F-483B-AB19-E8EFAE1E2998}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

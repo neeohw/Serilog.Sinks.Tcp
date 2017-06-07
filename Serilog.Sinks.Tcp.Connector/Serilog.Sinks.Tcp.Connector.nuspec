@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Serilog.Sinks.Tcp.Connector.Default</id>
+    <version>1.0.0.0</version>
+    <title>$id$</title>
+    <authors>Maarten Vergouwe</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package is used together with Serilog and Serilog.Sinks.Tcp to provide an implementation of a complete Tcp serilogger</description>
+    <releaseNotes>First version of this package</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Serilog Tcp</tags>
+  </metadata>
+</package>

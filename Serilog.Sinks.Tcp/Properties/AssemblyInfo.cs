@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Givt.Logging")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Serilog.Sinks.Tcp")]
+[assembly: AssemblyDescription("This package is used together with Serilog to provide a portable Tcp connection layer.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Givt.Logging")]
+[assembly: AssemblyProduct("Serilog.Sinks.Tcp")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
