@@ -36,23 +36,27 @@ namespace Serilog.Sinks.Tcp
 
             Task.Factory.StartNew(async () => 
             {
-                using (var httpClient = new HttpClient(_msgHandler, false))
+                try
                 {
-                    var content = new StringContent(data);
-                    content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-                    content.Headers.Add("ApiKey", _apiKey);
+                    using (var httpClient = new HttpClient(_msgHandler, false))
+                    {
+                        var content = new StringContent(data);
+                        content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                        content.Headers.Add("ApiKey", _apiKey);
 
-                    await httpClient.PostAsync(_url, content);
-                }
+                        await httpClient.PostAsync(_url, content);
+                    }
+                } catch  { } /* This is a logging framework. We don't care about logs not succeeding */
             });
         }
     }
 
     public static class HttpLoggerConfigurationExtensions
     {
-        public static LoggerConfiguration HttpSink(this LoggerSinkConfiguration loggerConfiguration, string url, string apiKey, LogEventLevel restrictedToMinimumLevel = LevelAlias.Minimum)
+        public static LoggerConfiguration HttpSink(this LoggerSinkConfiguration loggerConfiguration, string url, string apiKey, 
+                HttpMessageHandler msgHandler = null, LogEventLevel restrictedToMinimumLevel = LevelAlias.Minimum)
         {
-            var sink = new HttpSink(url, apiKey);
+            var sink = new HttpSink(url, apiKey, msgHandler);
             return loggerConfiguration.Sink(sink, restrictedToMinimumLevel);
         } 
     }
